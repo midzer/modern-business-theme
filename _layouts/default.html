@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="container">
+
+      {{ content }}
+
+      <hr>
+
+      {% include footer.html %}
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Bootstrap core JavaScript
+    =============================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+      $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+    </script>
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    </body>
+</html>
